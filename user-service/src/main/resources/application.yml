@@ -3,10 +3,10 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/userdb  # Replace 'userdb' with your database name
+    url: jdbc:postgresql://localhost:5432/ecommerce  # Replace 'userdb' with your database name
     driver-class-name: org.postgresql.Driver
     username: postgres  # Replace with your PostgreSQL username
-    password: password  # Replace with your PostgreSQL password
+    password:   # Replace with your PostgreSQL password
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
