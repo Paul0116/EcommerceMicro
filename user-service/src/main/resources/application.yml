@@ -1,0 +1,26 @@
+server:
+  port: 8080  # Change the port if needed
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/userdb  # Replace 'userdb' with your database name
+    driver-class-name: org.postgresql.Driver
+    username: postgres  # Replace with your PostgreSQL username
+    password: password  # Replace with your PostgreSQL password
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update  # Use 'update', 'create', 'create-drop', or 'validate' as per your need
+    show-sql: true  # Set to 'true' to print SQL queries in the console
+
+logging:
+  level:
+    org.springframework: INFO
+    org.hibernate.SQL: DEBUG  # Logs executed SQL queries
+    org.hibernate.type: TRACE  # Logs SQL query parameters
+
+
+
+jwt:
+  secret: 1dfgA8x6nFds93KjH/q9m1PqLzC+zV7uA2FtW7yO1Nc
+  expiration: 86400000 # 1 day
