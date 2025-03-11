@@ -42,7 +42,6 @@ public class AuthenticateCustomerUseCase {
                 token,
                 Math.toIntExact(customer.getId()), // Convert Long to int if needed
                 customer.getEmail(),
-                customer.getPassword(),
                 customer.getFirstname(),
                 customer.getLastname(),
                 customer.getMobileNumber(),

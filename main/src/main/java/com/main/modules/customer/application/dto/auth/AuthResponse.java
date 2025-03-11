@@ -9,7 +9,6 @@ public class AuthResponse {
     private String token;
     private int id;
     private String email;
-    private String password;
     private String firstname;
     private String lastname;
     private String mobileNumber;

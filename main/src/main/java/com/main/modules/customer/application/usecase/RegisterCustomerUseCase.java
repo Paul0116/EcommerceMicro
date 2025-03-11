@@ -50,7 +50,6 @@ public class RegisterCustomerUseCase {
                 token,
                 Math.toIntExact(customer.getId()), // Convert Long to int
                 customer.getEmail(),
-                customer.getPassword(),
                 customer.getFirstname(),
                 customer.getLastname(),
                 customer.getMobileNumber(),
